@@ -6,7 +6,7 @@
 /*   By: eduwer <eduwer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 18:31:52 by eduwer            #+#    #+#             */
-/*   Updated: 2020/10/24 19:01:00 by eduwer           ###   ########.fr       */
+/*   Updated: 2021/03/12 16:03:46 by eduwer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ typedef	struct		s_infos {
 	unsigned short		first_ttl;
 	unsigned short		max_ttl;
 	int					sockfd;
+	int					n_queries;
 	struct sockaddr_in	addr;
 	char				*addr_name;
 	int					timeout;

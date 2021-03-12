@@ -6,7 +6,7 @@
 /*   By: eduwer <eduwer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/10 23:17:50 by eduwer            #+#    #+#             */
-/*   Updated: 2020/10/24 18:53:40 by eduwer           ###   ########.fr       */
+/*   Updated: 2021/03/12 16:27:14 by eduwer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,14 @@
 
 void	print_help(void)
 {
-	printf("Usage: ft_traceroute [options] <destination>\n\nOptions:\
-\n  <destination>\tdomain name or ip v4 address\
+	printf("Usage: ft_traceroute [options] <destination>\
+\n\n<destination>\tdomain name or ip v4 address\
+\n\nOptions:\
+\n  -h\t\tPrint this help and exit\
+\n  -n\t\tNo dns resolution\
+\n  -f first_ttl\nFirst ttl (default 1)\
+\n  -m max_ttl\tMax ttl value (default 30)\
+\n  -q nqueries\tNumber of queries for each hop (default 3, max 10)\
 \n");
 	exit(0);
 }
